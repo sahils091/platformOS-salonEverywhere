@@ -1,0 +1,14 @@
+---
+name: sign_in_form
+resource: Session
+fields:
+  email:
+flash_notice: Session was successfully created.
+---
+
+{% form html-class: "w-50" %}
+  <div class="form-wrapper">
+    <input class="form-input" name="{{ form.fields.email.name }}" value="{{ form.fields.email.value }}" id="form_email" type="email" placeholder="Email">
+    <button class="form-btn ">SUBMIT</button>
+  </div>  
+{% endform %}    
