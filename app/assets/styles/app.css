@@ -17,6 +17,7 @@ a {
   }
   p{
       font-weight: 400;
+      font-size: 1.5rem;
   }
   h1{
       font-weight: 700;
@@ -257,22 +258,28 @@ img {
 
 .form-input {
   border: #db2827 solid 1px;
-  height: 2rem;
+  height: 1rem;
   border-radius: 0.5rem;
   width: 15rem;
   padding: 0.5rem;
   margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 1rem;
+  color: #db2827;
 }
 
 .form-btn {
   background-color: #db2827;
   height: 2rem;
-  width: 5rem;
+  width: 8rem;
   border-radius: 0.5rem;
   color: white;
   cursor: pointer;
   border: none;
   margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .form-btn:focus {
     outline: none;
@@ -302,7 +309,7 @@ img {
   background-repeat: repeat;
   color: white;
   height: auto;
-  font-family: 'Poppins', sans-serif;
+  
 }
 
 .question-label {
@@ -313,6 +320,7 @@ img {
   display: flex;
   padding: 0.5rem;
   position: relative;
+  font-family: 'Poppins', sans-serif;
 }
 
 .question-label input {
@@ -340,6 +348,9 @@ img {
 }
 .symptom-wrapper {
     width: 60%;
+}
+.question-text {
+    margin: 0;
 }
 
 .thankyou {

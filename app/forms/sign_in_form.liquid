@@ -1,14 +1,21 @@
 ---
 name: sign_in_form
-resource: Session
+resource: User
+resource_owner: anyone
 fields:
   email:
-flash_notice: Session was successfully created.
+  password:
+  first_name:
+    validation: { presence: true }
+
 ---
 
-{% form html-class: "w-50" %}
+{% form html-class: "w-50"  %}
   <div class="form-wrapper">
-    <input class="form-input" name="{{ form.fields.email.name }}" value="{{ form.fields.email.value }}" id="form_email" type="email" placeholder="Email">
-    <button class="form-btn ">SUBMIT</button>
+    <input class="form-input"  name="{{ form.fields.properties.email.name }}"
+      value="{{ form.fields.properties.email.value }}" id="form_email"
+      type="email" placeholder="Email"
+      required>
+    <button on class=" form-btn "><a href="/question">SUBMIT</a></button>
   </div>  
 {% endform %}    

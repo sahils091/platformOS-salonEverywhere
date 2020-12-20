@@ -1,0 +1,14 @@
+mutation send_api_call ($data: HashObject) {
+  api_call_send(
+    data: $data
+    template: { name: "ping_example_com_on_user_sign_up" }
+  ) {
+    response {
+      status
+      body
+    }
+    errors {
+      message
+    }
+  }
+}
